@@ -45,19 +45,8 @@
             this.lblSabor = new System.Windows.Forms.Label();
             this.lblTotalValor = new System.Windows.Forms.Label();
             this.cBoxSabores = new System.Windows.Forms.ComboBox();
-            this.lblNomeCliente = new System.Windows.Forms.Label();
-            this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.lblTipoPizza = new System.Windows.Forms.Label();
             this.cBoxTipoPizza = new System.Windows.Forms.ComboBox();
-            this.lblEntrega = new System.Windows.Forms.Label();
-            this.cBoxEntrega = new System.Windows.Forms.ComboBox();
-            this.gbDadosCliente = new System.Windows.Forms.GroupBox();
-            this.txtComplementoEntrega = new System.Windows.Forms.TextBox();
-            this.lblComplementoEntrega = new System.Windows.Forms.Label();
-            this.txtBairroEntrega = new System.Windows.Forms.TextBox();
-            this.lblBairroEntrega = new System.Windows.Forms.Label();
-            this.mskNumeroEntrega = new System.Windows.Forms.MaskedTextBox();
-            this.lblNEntrega = new System.Windows.Forms.Label();
             this.gbTipoCliente = new System.Windows.Forms.GroupBox();
             this.rbListarCLientes = new System.Windows.Forms.RadioButton();
             this.rbNovoCliente = new System.Windows.Forms.RadioButton();
@@ -66,7 +55,6 @@
             this.numBacon = new System.Windows.Forms.NumericUpDown();
             this.gbIngredientes.SuspendLayout();
             this.gbSabores.SuspendLayout();
-            this.gbDadosCliente.SuspendLayout();
             this.gbTipoCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQueijo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPeitoPeru)).BeginInit();
@@ -85,7 +73,7 @@
             this.gbIngredientes.Controls.Add(this.lblQueijo);
             this.gbIngredientes.Location = new System.Drawing.Point(366, 83);
             this.gbIngredientes.Name = "gbIngredientes";
-            this.gbIngredientes.Size = new System.Drawing.Size(261, 199);
+            this.gbIngredientes.Size = new System.Drawing.Size(261, 227);
             this.gbIngredientes.TabIndex = 0;
             this.gbIngredientes.TabStop = false;
             this.gbIngredientes.Text = "Ingredientes";
@@ -151,9 +139,9 @@
             this.lblQueijo.AutoSize = true;
             this.lblQueijo.Location = new System.Drawing.Point(32, 37);
             this.lblQueijo.Name = "lblQueijo";
-            this.lblQueijo.Size = new System.Drawing.Size(37, 13);
+            this.lblQueijo.Size = new System.Drawing.Size(40, 13);
             this.lblQueijo.TabIndex = 0;
-            this.lblQueijo.Text = "Queijo";
+            this.lblQueijo.Text = "Queijo:";
             // 
             // gbSabores
             // 
@@ -170,14 +158,14 @@
             this.gbSabores.Controls.Add(this.cBoxSabores);
             this.gbSabores.Location = new System.Drawing.Point(633, 83);
             this.gbSabores.Name = "gbSabores";
-            this.gbSabores.Size = new System.Drawing.Size(253, 325);
+            this.gbSabores.Size = new System.Drawing.Size(253, 299);
             this.gbSabores.TabIndex = 1;
             this.gbSabores.TabStop = false;
             this.gbSabores.Text = "Sabores Prontos";
             // 
             // txtPrecoPizzaPronta
             // 
-            this.txtPrecoPizzaPronta.Location = new System.Drawing.Point(70, 234);
+            this.txtPrecoPizzaPronta.Location = new System.Drawing.Point(70, 207);
             this.txtPrecoPizzaPronta.Name = "txtPrecoPizzaPronta";
             this.txtPrecoPizzaPronta.Size = new System.Drawing.Size(169, 20);
             this.txtPrecoPizzaPronta.TabIndex = 6;
@@ -206,7 +194,7 @@
             // 
             // btnFazerPedido
             // 
-            this.btnFazerPedido.Location = new System.Drawing.Point(92, 271);
+            this.btnFazerPedido.Location = new System.Drawing.Point(90, 245);
             this.btnFazerPedido.Name = "btnFazerPedido";
             this.btnFazerPedido.Size = new System.Drawing.Size(106, 23);
             this.btnFazerPedido.TabIndex = 3;
@@ -227,7 +215,7 @@
             this.lblTotalValor.AutoSize = true;
             this.lblTotalValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalValor.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblTotalValor.Location = new System.Drawing.Point(16, 234);
+            this.lblTotalValor.Location = new System.Drawing.Point(12, 207);
             this.lblTotalValor.Name = "lblTotalValor";
             this.lblTotalValor.Size = new System.Drawing.Size(48, 20);
             this.lblTotalValor.TabIndex = 1;
@@ -246,22 +234,6 @@
             this.cBoxSabores.Name = "cBoxSabores";
             this.cBoxSabores.Size = new System.Drawing.Size(137, 21);
             this.cBoxSabores.TabIndex = 0;
-            // 
-            // lblNomeCliente
-            // 
-            this.lblNomeCliente.AutoSize = true;
-            this.lblNomeCliente.Location = new System.Drawing.Point(6, 32);
-            this.lblNomeCliente.Name = "lblNomeCliente";
-            this.lblNomeCliente.Size = new System.Drawing.Size(38, 13);
-            this.lblNomeCliente.TabIndex = 0;
-            this.lblNomeCliente.Text = "Nome:";
-            // 
-            // txtNomeCliente
-            // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(47, 29);
-            this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(295, 20);
-            this.txtNomeCliente.TabIndex = 0;
             // 
             // lblTipoPizza
             // 
@@ -283,96 +255,6 @@
             this.cBoxTipoPizza.Name = "cBoxTipoPizza";
             this.cBoxTipoPizza.Size = new System.Drawing.Size(121, 21);
             this.cBoxTipoPizza.TabIndex = 6;
-            // 
-            // lblEntrega
-            // 
-            this.lblEntrega.AutoSize = true;
-            this.lblEntrega.Location = new System.Drawing.Point(6, 186);
-            this.lblEntrega.Name = "lblEntrega";
-            this.lblEntrega.Size = new System.Drawing.Size(72, 13);
-            this.lblEntrega.TabIndex = 7;
-            this.lblEntrega.Text = "Para Entrega:";
-            // 
-            // cBoxEntrega
-            // 
-            this.cBoxEntrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBoxEntrega.FormattingEnabled = true;
-            this.cBoxEntrega.Items.AddRange(new object[] {
-            "Sim",
-            "Não"});
-            this.cBoxEntrega.Location = new System.Drawing.Point(86, 178);
-            this.cBoxEntrega.Name = "cBoxEntrega";
-            this.cBoxEntrega.Size = new System.Drawing.Size(121, 21);
-            this.cBoxEntrega.TabIndex = 8;
-            // 
-            // gbDadosCliente
-            // 
-            this.gbDadosCliente.Controls.Add(this.txtComplementoEntrega);
-            this.gbDadosCliente.Controls.Add(this.lblComplementoEntrega);
-            this.gbDadosCliente.Controls.Add(this.txtBairroEntrega);
-            this.gbDadosCliente.Controls.Add(this.cBoxEntrega);
-            this.gbDadosCliente.Controls.Add(this.lblBairroEntrega);
-            this.gbDadosCliente.Controls.Add(this.mskNumeroEntrega);
-            this.gbDadosCliente.Controls.Add(this.lblEntrega);
-            this.gbDadosCliente.Controls.Add(this.lblNEntrega);
-            this.gbDadosCliente.Controls.Add(this.txtNomeCliente);
-            this.gbDadosCliente.Controls.Add(this.lblNomeCliente);
-            this.gbDadosCliente.Location = new System.Drawing.Point(12, 83);
-            this.gbDadosCliente.Name = "gbDadosCliente";
-            this.gbDadosCliente.Size = new System.Drawing.Size(348, 227);
-            this.gbDadosCliente.TabIndex = 9;
-            this.gbDadosCliente.TabStop = false;
-            this.gbDadosCliente.Text = "Informacões Clientes:";
-            this.gbDadosCliente.Visible = false;
-            // 
-            // txtComplementoEntrega
-            // 
-            this.txtComplementoEntrega.Location = new System.Drawing.Point(86, 133);
-            this.txtComplementoEntrega.Name = "txtComplementoEntrega";
-            this.txtComplementoEntrega.Size = new System.Drawing.Size(100, 20);
-            this.txtComplementoEntrega.TabIndex = 5;
-            // 
-            // lblComplementoEntrega
-            // 
-            this.lblComplementoEntrega.AutoSize = true;
-            this.lblComplementoEntrega.Location = new System.Drawing.Point(6, 136);
-            this.lblComplementoEntrega.Name = "lblComplementoEntrega";
-            this.lblComplementoEntrega.Size = new System.Drawing.Size(74, 13);
-            this.lblComplementoEntrega.TabIndex = 4;
-            this.lblComplementoEntrega.Text = "Complemento:";
-            // 
-            // txtBairroEntrega
-            // 
-            this.txtBairroEntrega.Location = new System.Drawing.Point(63, 99);
-            this.txtBairroEntrega.Name = "txtBairroEntrega";
-            this.txtBairroEntrega.Size = new System.Drawing.Size(96, 20);
-            this.txtBairroEntrega.TabIndex = 3;
-            // 
-            // lblBairroEntrega
-            // 
-            this.lblBairroEntrega.AutoSize = true;
-            this.lblBairroEntrega.Location = new System.Drawing.Point(10, 102);
-            this.lblBairroEntrega.Name = "lblBairroEntrega";
-            this.lblBairroEntrega.Size = new System.Drawing.Size(37, 13);
-            this.lblBairroEntrega.TabIndex = 2;
-            this.lblBairroEntrega.Text = "Bairro:";
-            // 
-            // mskNumeroEntrega
-            // 
-            this.mskNumeroEntrega.Location = new System.Drawing.Point(63, 64);
-            this.mskNumeroEntrega.Mask = "999999";
-            this.mskNumeroEntrega.Name = "mskNumeroEntrega";
-            this.mskNumeroEntrega.Size = new System.Drawing.Size(96, 20);
-            this.mskNumeroEntrega.TabIndex = 1;
-            // 
-            // lblNEntrega
-            // 
-            this.lblNEntrega.AutoSize = true;
-            this.lblNEntrega.Location = new System.Drawing.Point(10, 71);
-            this.lblNEntrega.Name = "lblNEntrega";
-            this.lblNEntrega.Size = new System.Drawing.Size(47, 13);
-            this.lblNEntrega.TabIndex = 0;
-            this.lblNEntrega.Text = "Numero:";
             // 
             // gbTipoCliente
             // 
@@ -436,7 +318,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(898, 505);
             this.Controls.Add(this.gbTipoCliente);
-            this.Controls.Add(this.gbDadosCliente);
             this.Controls.Add(this.gbSabores);
             this.Controls.Add(this.gbIngredientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -446,8 +327,6 @@
             this.gbIngredientes.PerformLayout();
             this.gbSabores.ResumeLayout(false);
             this.gbSabores.PerformLayout();
-            this.gbDadosCliente.ResumeLayout(false);
-            this.gbDadosCliente.PerformLayout();
             this.gbTipoCliente.ResumeLayout(false);
             this.gbTipoCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQueijo)).EndInit();
@@ -475,19 +354,8 @@
         private System.Windows.Forms.Label lblValorIngredientes;
         private System.Windows.Forms.TextBox txtPrecoPizzaPronta;
         private System.Windows.Forms.TextBox txtValorIngredientes;
-        private System.Windows.Forms.Label lblNomeCliente;
-        private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Label lblTipoPizza;
         private System.Windows.Forms.ComboBox cBoxTipoPizza;
-        private System.Windows.Forms.Label lblEntrega;
-        private System.Windows.Forms.ComboBox cBoxEntrega;
-        private System.Windows.Forms.GroupBox gbDadosCliente;
-        private System.Windows.Forms.TextBox txtBairroEntrega;
-        private System.Windows.Forms.Label lblBairroEntrega;
-        private System.Windows.Forms.MaskedTextBox mskNumeroEntrega;
-        private System.Windows.Forms.Label lblNEntrega;
-        private System.Windows.Forms.TextBox txtComplementoEntrega;
-        private System.Windows.Forms.Label lblComplementoEntrega;
         private System.Windows.Forms.GroupBox gbTipoCliente;
         private System.Windows.Forms.RadioButton rbListarCLientes;
         private System.Windows.Forms.RadioButton rbNovoCliente;
