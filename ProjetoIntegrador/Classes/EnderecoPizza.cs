@@ -9,6 +9,7 @@ namespace ProjetoIntegrador.Classes
 {
    public class EnderecoPizza
     {
+        private int id;
         private string numero;
         private string bairro;
         private string complemento;
@@ -27,6 +28,19 @@ namespace ProjetoIntegrador.Classes
         {
             get { return complemento; }
             set { complemento = value; }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
         }
     }
 }
