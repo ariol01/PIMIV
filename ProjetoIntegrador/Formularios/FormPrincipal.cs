@@ -23,13 +23,13 @@ namespace ProjetoIntegrador.Formularios
 
         private void rbNovoCliente_CheckedChanged(object sender, EventArgs e)
         {
-            gbDadosCliente.Visible = true;
+           
 
         }
 
         private void rbListarCLientes_CheckedChanged(object sender, EventArgs e)
         {
-            gbDadosCliente.Visible = false;
+           
         }
     }
 }

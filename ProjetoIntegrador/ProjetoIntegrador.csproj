@@ -56,6 +56,12 @@
     <Compile Include="DAO\ConexaoDAO.cs" />
     <Compile Include="DAO\EnderecoPizzaDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
+    <Compile Include="Formularios\FormEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormEndereco.Designer.cs">
+      <DependentUpon>FormEndereco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormInicializacao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FormEndereco.resx">
+      <DependentUpon>FormEndereco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormInicializacao.resx">
       <DependentUpon>FormInicializacao.cs</DependentUpon>
     </EmbeddedResource>
