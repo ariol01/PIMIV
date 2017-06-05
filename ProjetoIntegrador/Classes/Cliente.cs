@@ -12,6 +12,7 @@ namespace ProjetoIntegrador.Classes
         private string nome;
         private string numero;
         private string bairro;
+        private string complemento;
 
         public int Id
         {
@@ -62,6 +63,19 @@ namespace ProjetoIntegrador.Classes
             set
             {
                 bairro = value;
+            }
+        }
+
+        public string Complemento
+        {
+            get
+            {
+                return complemento;
+            }
+
+            set
+            {
+                complemento = value;
             }
         }
     }
