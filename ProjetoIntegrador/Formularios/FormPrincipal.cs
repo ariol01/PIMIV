@@ -21,15 +21,6 @@ namespace ProjetoIntegrador.Formularios
            
         }
 
-        private void rbNovoCliente_CheckedChanged(object sender, EventArgs e)
-        {
-           
-
-        }
-
-        private void rbListarCLientes_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
+        
     }
 }
